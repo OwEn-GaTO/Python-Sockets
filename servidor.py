@@ -46,6 +46,7 @@ class Servidor():
 			try:
 				conn, addr = self.sock.accept()
 				conn.setblocking(False)
+				print(addr)
 				self.clientes.append(conn)
 			except:
 				pass
